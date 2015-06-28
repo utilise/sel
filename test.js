@@ -17,7 +17,7 @@ describe('sel', function() {
     node.parentNode.removeChild(node)
   })
 
-  it('should do nothing', function() {
+  it('should d3 select node', function() {
     expect(sel(node).node() == node).to.be.ok
   })
 
