@@ -1,6 +1,6 @@
 var expect = require('chai').expect
   , d3 = global.d3 = require('d3')
-  , client = require('client')
+  , client = require('utilise.client')
   , shim = !client && polyfill()
   , sel = require('./')
 
