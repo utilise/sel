@@ -21,6 +21,10 @@ describe('sel', function() {
     expect(sel(node).node() == node).to.be.ok
   })
 
+  it('should not double select node', function() {
+    expect(sel(sel(node)).node() == node).to.be.ok
+  })
+
 })
 
 function polyfill(){
